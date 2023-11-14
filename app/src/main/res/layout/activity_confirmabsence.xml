@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:paddingBottom="30dp"
+    android:background="@color/colorPrimary"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:weightSum="0.7"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:text="ABSENTEES"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <GridView
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="70dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:layout_height="150dp"
+        android:id="@+id/gridabsent"
+       android:layout_below="@+id/relativeWhite"
+        />
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/gridabsent"
+                android:layout_width="wrap_content"
+                android:paddingRight="20dp"
+                android:layout_marginTop="30dp"
+                 android:layout_centerHorizontal="true"
+                android:layout_weight="0.2"
+                android:layout_height="50dp">
+
+
+
+                <TextView
+                    android:id="@+id/btnCancel"
+
+                    android:background="@drawable/loginxml"
+                    android:textColor="@color/colorWhite"
+                    android:text="CANCEL"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/btnCancel"
+                    android:layout_height="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="25dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/loginxml"
+                    android:text="YES"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+

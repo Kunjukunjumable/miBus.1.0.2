@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:elevation="5dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imgb"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_below="@+id/img1"
+            android:text=""
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorPrimaryLightnew"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textDir"
+            android:layout_below="@+id/textName"
+            android:text="Choose route"
+            android:textColor="@color/colorPrimaryLightnew"
+
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/relativespinner"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_layoutgreylight"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/textDir"
+
+            android:layout_height="wrap_content">
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:textTint="@color/colorPrimaryLight"
+                android:layout_margin="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_below="@+id/relativespinner"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:background="@drawable/loginxml"
+                android:text="CANCEL"
+                android:layout_toLeftOf="@+id/btnSave"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnSave"
+              android:layout_alignParentRight="true"
+                android:background="@drawable/loginxml"
+                android:layout_marginLeft="10dp"
+                android:text="SAVE"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
